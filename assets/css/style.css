@@ -867,6 +867,15 @@ main {
   border-radius: inherit;
 }
 
+.clients-list {
+  display: grid; /* Flexdan gridga o'zgartirish */
+  grid-template-columns: repeat(2, 1fr); /* 2 ustun */
+  gap: 20px; /* Ustunlar o'rtasidagi masofa */
+}
+
+.clients-item {
+  list-style: none; /* Ro'yxat belgisini olib tashlash */
+}
 
 
 
