@@ -462,36 +462,79 @@
           </section>
 
         </div>
-        <div class="achievments">
-        <section class="achievments">
+        
+         <div class="container">
+    <div class="section-title">
+      <h2>My Achievements</h2>
+    </div>
+    
+    <div class="achievements-grid">
+      <!-- Kaggle Master -->
+      <div class="achievement-card">
+        <div class="icon-container">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <h3>Kaggle Master</h3>
+        <p>I got my master's degree in Kaggle platform. I am currently in the top 200.</p>
+        <div class="achievement-image">
+          <img src="assets/images/kaggle.png" alt="Kaggle Master">
+        </div>
+        <a href="https://www.kaggle.com/javohirtoshqorgonov" class="view-more">View Profile</a>
+      </div>
+      
+      <!-- Bronze Medal -->
+      <div class="achievement-card">
+        <div class="icon-container">
+          <i class="fas fa-medal"></i>
+        </div>
+        <h3>Kaggle Competition</h3>
+        <p>My first bronze medal in kaggle competition.</p>
+        <div class="achievement-image">
+          <img src="assets/images/Bronze_medal.jpg" alt="Bronze Medal">
+        </div>
+        <a href="https://www.kaggle.com/javohirtoshqorgonov" class="view-more">See Details</a>
+      </div>
+      
+      <!-- University Acceptance 1 -->
+      <div class="achievement-card">
+        <div class="icon-container">
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <h3>Top University Acceptance</h3>
+        <p>Acceptance letter from a Padua university for advanced studies in AI and Physics.</p>
+        <div class="achievement-image">
+          <img src="assets/images/ac1.jpg" alt="University Acceptance 1">
+        </div>
+        <a href="#" class="view-more">View Letter</a>
+      </div>
+      
+      <!-- University Acceptance 2 -->
+      <div class="achievement-card">
+        <div class="icon-container">
+          <i class="fas fa-university"></i>
+        </div>
+        <h3>Top University Acceptance</h3>
+        <p>Letter of acceptance for a master's degree from a number one university in Italy, ranked 120th in the world.</p>
+        <div class="achievement-image">
+          <img src="assets/images/ac2.jpg" alt="University Acceptance 2">
+        </div>
+        <a href="#" class="view-more">View Letter</a>
+      </div>
+    </div>
+  </div>
 
-          <h3 class="h3 clients-title">My achievments</h3>
-        <div>
-          <p class="service-item-text">
-            I got my master's degree in Kaggle platform. I am currently in the top 200.
-          </p>
-          <ul class="clients-list has-scrollbar">
-            
-            <li class="clients-item">
-              <a href="https://www.kaggle.com/javohirtoshqorgonov">
-                <img src="./assets/images/kaggle.png" alt="client logo">
-              </a>
-            </li>
-          </div>
-          <div>
-            <p class="service-item-text">
-              My first bronze medal in kaggle competition.
-            </p>
-            <ul class="clients-list has-scrollbar">
-  
-              <li class="clients-item">
-                <a href="https://www.kaggle.com/javohirtoshqorgonov">
-                  <img src="./assets/images/Bronze_medal.jpg" alt="client logo">
-                </a>
-              </li>
-            </div>
-
-          </div>
+  <script>
+    // Simple animation for cards when they come into view
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.achievement-card');
+      
+      cards.forEach((card, index) => {
+        // Add delay based on index for staggered animation
+        card.style.animationDelay = `${index * 0.1}s`;
+        card.classList.add('fade-in');
+      });
+    });
+  </script>
 
 
 
@@ -601,7 +644,7 @@
                 <ul class="clients-list has-scrollbar">
       
                   <li class="clients-item">
-                    <a href="https://specialbusinessdevolopment.on.drv.tw/www.sbd.ai/">
+                    <a href="https://special-business-development.netlify.app/">
                       <img src="./assets/images/logo-1-color.png" alt="client logo">
                     </a>
                   </li>
